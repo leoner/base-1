@@ -9,13 +9,14 @@
     <script src="../static/js/arale-helper.js"></script>
     <script src="../static/js/es5-safe.js"></script>
     <script src="../static/js/mocha.js"></script>
+    <script src="../static/js/sinon.js"></script>
+    <script src="../static/js/expect.js"></script>
   </head>
   <body>
     <div id="mocha"></div>
     <script>
       (function() {
         mocha.setup('bdd');
-        puerh.use('expect');
         var data = {"name":"base","root":"arale","description":"Base 是一个基础类，提供 Class、Events、Attribute 和 Aspect 支持。","version":"1.0.1","tag":"infrastructure","homepage":"http://aralejs.org/base","repository":{"type":"git","url":"https://github.com/aralejs/base.git"},"bugs":{"url":"https://github.com/aralejs/base/issues"},"dependencies":{"class":"arale/class/1.0.0/class","events":"arale/events/1.0.0/events"},"tests":["base"],"output":{"base.js":"."}}
 
         if (data.spm && data.spm.alias) {
